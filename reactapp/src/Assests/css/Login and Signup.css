@@ -1,0 +1,128 @@
+.login-container-center{
+  display: flex;
+  align-items: flex-start;
+  min-height: 97vh; 
+  user-select: none;
+  background-color: #fc441d;
+}
+
+.fingerprint{
+  color: black;
+  font-size: 4rem;
+}
+
+
+.left-side-login {
+  flex: 1; /* Takes up half of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side-login img{
+  align-items: center;
+  min-height: 90vh;
+  width: 70%;
+}
+
+.right-side-login {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.login-container
+{
+  width: 360px;
+  padding: 20px;
+  border: 1.4px solid black;
+  border-radius: 3rem;
+  text-align: center;
+  margin-top: 13%;
+  display: flex; /* Use flexbox for all devices */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  user-select: none;
+}
+
+.login-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.forgot-pass-login{
+    color: blue;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.new-user
+{
+  color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.common-input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 90%;
+    margin-bottom: 10px;
+    color: black;
+    background-color: white;
+  }
+  
+  .common-input-field:focus {
+    border-color: black;
+  }
+
+
+.common-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5%;
+    background-color: blue;
+    color: white;
+  }
+  
+  .common-button:hover {
+    border: 5px black;
+    background-color: rgb(255, 30, 0);
+    transition: background-color 0.3s ease-in-out; 
+    color: white; 
+  }
+
+@media(max-width:768px)
+{
+  .left-side-login img{
+    visibility: hidden;
+  }
+
+  .login-container
+{
+  width: 280px;
+  border: 1.4px solid black;
+  border-radius: 3rem;
+  margin-right: 15%;
+  text-align: center;
+  display: flex; /* Use flexbox for all devices */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  user-select: none;
+}
+}

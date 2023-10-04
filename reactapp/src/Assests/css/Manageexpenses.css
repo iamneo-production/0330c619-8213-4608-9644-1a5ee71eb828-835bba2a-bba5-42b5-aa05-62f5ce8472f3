@@ -1,0 +1,151 @@
+.manage-expenses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
+  
+  .income-expenses-container {
+    flex: 1;
+    background-color: #f94d00;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .income-container,
+  .expenses-container {
+    background-color: #cb410b;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .income-container,
+  .expenses-container p{
+    color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .user-input-container {
+    flex: 1;
+    background-color: #f94d00;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-section {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  
+  .input-section label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .input-section input,
+  select {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .manage-expenses-button {
+    background-color: #ff1500;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .manage-expenses-button:hover {
+    background-color: #f93321;
+  }
+ 
+
+.transaction-table {
+    margin-top: 5rem;
+    width: 80%;
+  }
+  
+  .transaction-table h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #ff4500;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background-color: #ff4500;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #ff6700;
+  }
+  
+  table tbody tr:hover {
+    background-color: #ff8243;
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .income-expenses-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .user-input-container {
+      flex: 1;
+      background-color: #f94d00;
+      padding: 25px;
+      width: 70%;
+      margin-left: 10%;
+    }
+  }
